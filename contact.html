@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Me | 168464 | Rjaa' Ramzi Issa Ibrahim</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">168464 | Rjaa' Ramzi Issa Ibrahim</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="contact.html">Contact Me</a>
+  </nav>
+</div>
+
+<div class="contact-head">
+  <h1>&#9993; Contact Me</h1>
+  <p>Feel free to reach out to me!</p>
+  <div class="bar" style="width:90px;height:4px;background:var(--olive);margin-top:16px;border-radius:2px"></div>
+</div>
+
+<form id="contactForm" onsubmit="return validateForm(event)" novalidate>
+  <label for="fullname">Full Name <span>*</span></label>
+  <input type="text" id="fullname" placeholder="Enter your full name">
+
+  <label for="email">Email Address <span>*</span></label>
+  <input type="text" id="email" placeholder="Enter your email address">
+
+  <label for="country">Country <span>*</span></label>
+  <select id="country">
+    <option value="">Select your country</option>
+    <option>Jordan</option><option>Palestine</option><option>Saudi Arabia</option>
+    <option>United Arab Emirates</option><option>Egypt</option><option>Iraq</option>
+    <option>Syria</option><option>Lebanon</option><option>United States</option>
+    <option>United Kingdom</option><option>Other</option>
+  </select>
+
+  <label for="comments">Comments <span>*</span></label>
+  <textarea id="comments" rows="5" placeholder="Write your message here..."></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+<div class="success" id="success">
+  <strong>&#10004; Form submitted successfully!</strong><br>Thank you for contacting me.
+</div>
+
+<footer>
+  <div>
+    <h3>Let's Connect</h3>
+    <div class="links">
+      <a href="https://github.com/rribrahim23" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:rribrahim23@cit.just.edu.jo">Email</a>
+    </div>
+  </div>
+  <div class="quote">&ldquo;Dream it. Learn it. Achieve it.&rdquo;</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
